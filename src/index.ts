@@ -1,1 +1,7 @@
-export const Greeter = (name: string) => `Hello ${name}`
+export type GreeterMessage = {
+	text: string
+}
+
+export const Greeter = (name: string): GreeterMessage => ({
+	text: `Hello ${name}`,
+})
