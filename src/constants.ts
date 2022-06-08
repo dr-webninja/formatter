@@ -33,7 +33,7 @@ export const defaultFormatOptions = {
  */
 
 export const hasToLocaleStringSupport = !!(
-	typeof Intl == 'object' &&
+	typeof Intl === 'object' &&
 	Intl &&
-	typeof Intl.NumberFormat == 'function'
+	typeof Intl.NumberFormat === 'function'
 )
