@@ -1,7 +1,3 @@
-export type GreeterMessage = {
-	text: string
-}
+import { formatCurrencyUnit } from './formatCurrency'
 
-export const Greeter = (name: string): GreeterMessage => ({
-	text: `Hello ${name}`,
-})
+export default formatCurrencyUnit
